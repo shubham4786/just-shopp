@@ -20,7 +20,7 @@ form.addEventListener('submit', function(event){
     console.log(name);
 })
 function showImages(){
-    for(let i=0; i<window.localStorage.length/4; i++){
+    for(let i=0; i<window.localStorage.length; i++){
         let res=window.localStorage.getItem(window.localStorage.key(i))
         var image= new Image()
         image.src=res;
@@ -38,28 +38,27 @@ function showImages(){
                // let val=window.localStorage.getItem(window.localStorage.key(price));
         // let val=document.getElementById('price').value
         // inner2.files[0].price=val;
-        // const hello={name:'Ayush',age:23};
+        const hello={name:'Ayush',age:23};
         
-        //     inner2.innerText=hello.name;
+            inner2.innerText=hello.name;
         
         
         //==========================================
-        let x=document.createElement('p');
-        let y=document.createElement('p');
-        let z=document.createElement('p');
+        // let x=document.createElement('p');
+        // let y=document.createElement('p');
+        // let z=document.createElement('p');
         
-        let a=document.getElementById('price').value;
-        localStorage.setItem("price",a)
-        x.innerHTML=`price :${a}`;
-        let b=document.getElementById('category').value;
-        localStorage.setItem("category",b)
-        y.innerHTML=`category  :${b}`;
-        let c=document.getElementById('age').value;
-        localStorage.setItem("age",c)
-        z.innerHTML=`Purchase year :${c}`;
-        inner2.appendChild(x);
-        inner2.appendChild(y);
-        inner2.appendChild(z);
+        // let a=document.getElementById('price').value;
+        // // localStorage.setItem("price",a)
+        // x.innerHTML=`price :${a}`;
+        // let b=document.getElementById('category').value;
+        // // localStorage.setItem("category",b)
+        // y.innerHTML=`category  :${b}`;
+        // let c=document.getElementById('age').value;
+        // z.innerHTML=`Purchase year :${c}`;
+        // inner2.appendChild(x);
+        // inner2.appendChild(y);
+        // inner2.appendChild(z);
     }
 
 }

@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:100vw;
+    background-image: linear-gradient(rgba(3, 158, 255, 0.263) ,rgba(0, 200, 255, 0.203)),url(assets/a.jpg)
+    ;
+    backdrop-filter: 2px;
+    background-size: cover;
+    
+}
+.box{
+    background-color: yellow;
+    width: 38vw;
+    height: 500px;
+    display: fixed;
+    background: transparent;
+     backdrop-filter: blur(10px);
+     border: 1px solid rgb(225, 222, 222);
+     border-radius: 8px;
+     box-shadow: 0 0 10px;
+    
+   
+    
+}
+li{ width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+}
+input{
+    position: relative;
+    width: 88%;
+    margin:2vh 0vh;
+    height: 50px;
+    font-size: 20px;
+    color: rgb(6, 6, 6);
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom:  2px solid black;
+}
+#but{
+    width: 90%;
+    border-radius: 8px;
+    height: 6vh;
+    background-color: rgb(0, 157, 255);
+    border: none;
+    /* box-shadow: 0 0 3px; */
+    font: 700;
+    color: white;
+    font-size: 3vh;
+}
+
+::placeholder {
+    color: rgb(56, 53, 53);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: rgb(56, 53, 53);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: rgb(56, 53, 53);
+  }
+
+  ion-icon{
+    position: absolute;
+    top: 28%;
+    right: 9%;
+  }
+  button{
+    margin: 4vh 0;
+  }
+  #check{
+    height: 20px;
+    width: 20px;
+    margin-left:2%;
+    
+  }
+  .checkk{
+    display: flex;
+    justify-content: left;
+    margin: 5px 0;
+    position: relative;
+  }
+  #check{
+    margin: 0 2vw;
+    
+  }
+  
+  @media( max-width:550px){
+    .box{
+        width: 100vw;
+        height: 100vh;
+    }
+  }
+  a{
+    /* text-decoration: none; */
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 119, 255);
+    cursor: pointer;
+     
+  }
+  li span{
+    font-size: 16px;
+    
+    margin:5px 5px;
+  }
