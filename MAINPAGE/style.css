@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    background: rgb(62, 123, 149);
+    display: flex;
+    
+    align-items: center; 
+
+}
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li{
+    display: inline;
+}
+#search{
+    width: 30vw;
+    position: relative;
+    height: 40px;
+    border-radius: 150px;
+    outline: none;
+    border: 1px solid rgb(115, 111, 111); padding:0 15px;
+
+}
+.lens{
+    position: relative;
+}
+.lens button{
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    border-radius: 5px;
+}
+select{
+    width: 20vw;
+    height: 40px;
+    border-radius: 4px;
+}
+#log{
+    padding: 4px 20px;
+    background-color: rgb(15, 226, 15);
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    border: none;
+    border-radius: 15px;
+    
+}
+#sell{
+    padding: 4px 20px;
+    background-color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(0, 0, 0);
+    font-weight: 700;
+    /* border: 5px solid red; */
+    border-width: 3px;
+    border-style: solid;
+    border-color:  #0d33cc #f50a03 #33cc33 yellow ;
+    border-radius: 20px;
+
+}
