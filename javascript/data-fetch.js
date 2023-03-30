@@ -11,8 +11,8 @@ for (let i = 0; i < data.length; i++) {
     img.classList.add("box-img");
     img.src = data[i].img;
 
-    let ids = document.createElement("div");
-    let id = document.createTextNode(`Id:- ${data[i].id}`);
+    let years = document.createElement("div");
+    let year = document.createTextNode(`Id:- ${data[i].year}`);
 
     let items = document.createElement("div");
     let item = document.createTextNode(`Item:- ${data[i].item}`);
@@ -21,14 +21,15 @@ for (let i = 0; i < data.length; i++) {
     let price = document.createTextNode(`Price:- ${data[i].price}`);
 
     //append child
-    ids.appendChild(id);
+    years.appendChild(year);
     items.appendChild(item);
     prices.appendChild(price);
 
     box.appendChild(img);
-    box.appendChild(ids);
     box.appendChild(items);
     box.appendChild(price);
+    box.appendChild(years);
+    
 
     product.appendChild(box);
 

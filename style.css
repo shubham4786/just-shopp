@@ -92,13 +92,15 @@ select {
 
 .box {
     margin: 10px;
-    border: 2px solid black;
+    border: 1px solid black;
+    border-radius: 5px;
     font-weight: 700;
     color: blue;
+    overflow: hidden;
 }
 
 .box-img {
-    width: 200px;
+    width: 250px;
     height: 200px;
 }
 
@@ -147,30 +149,37 @@ select {
     font-size: 20px;
 }
 
+.download-section{
+    width: 100%;
+    background-color: #f0efee;
+}
+
 .download_store p {
-    padding: 20px 20px 20px 0;
     font-weight: bold;
     font-size: 17px;
 }
 
 .download_store {
+    display: flex;
+    flex-direction: column;
     padding-left: 30px;
 }
 
 .download_store img {
+    margin-bottom: 10px;
     width: 150px;
     padding-left: 5px;
 }
 
 .main_footer {
-    background-color: #ebeeef;
+    background-color: #cdcfd0;
 }
 
 .footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1200px;
+    width: 100%;
     margin: auto;
 }
 
