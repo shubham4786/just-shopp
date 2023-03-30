@@ -1,9 +1,62 @@
-var sample = [
+let data = [
     {
-        img: "./assets/image/images.jpg",
-        price:2000,
-        category:"car",
-        year:2016,
-
-    }
+        id: 1,
+        item: "Car",
+        img: "./assets/images/image1.jpg",
+        price: 1000000
+    },
+    {
+        id: 2,
+        item: "Car",
+        img: "./assets/images/image2.jpg",
+        price: 1000000
+    },
+    {
+        id: 3,
+        item: "Car",
+        img: "./assets/images/image1.jpg",
+        price: 1000000
+    },
+    {
+        id: 4,
+        item: "Car",
+        img: "./assets/images/image2.jpg",
+        price: 1000000
+    },
+    {
+        id: 5,
+        item: "Car",
+        img: "./assets/images/image1.jpg",
+        price: 1000000
+    },
+    {
+        id: 6,
+        item: "Car",
+        img: "./assets/images/image2.jpg",
+        price: 1000000
+    },
+    {
+        id: 7,
+        item: "Car",
+        img: "./assets/images/image1.jpg",
+        price: 1000000
+    },
+    {
+        id: 8,
+        item: "Car",
+        img: "./assets/images/image2.jpg",
+        price: 1000000
+    },
+    {
+        id: 9,
+        item: "Car",
+        img: "./assets/images/image1.jpg",
+        price: 1000000
+    },
+    {
+        id: 10,
+        item: "Car",
+        img: "./assets/images/image2.jpg",
+        price: 1000000
+    },
 ]
