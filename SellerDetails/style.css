@@ -1,0 +1,262 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    /* justify-content:  center; */
+    box-sizing: border-box;
+        }
+
+
+    .main{
+        width: 900px;
+        grid-area: main;
+        margin-left: 50px;
+        background-color: #eae9e9;
+        
+    }
+    .sidebar{
+        width: 500px;
+        grid-area: sidebar;
+        margin-right: 50px;
+    }
+
+    .container{
+        display: grid;
+        grid-template-areas: 'main main  sidebar';
+        gap: 20px;
+        background-color: #eae9e9;
+    
+    }
+
+    .main{
+        background-color: #eae9e9;
+        height: 1300px;
+        
+    }
+
+    .sidebar{
+        background-color: #eae9e9;
+        height: 700px;
+        /* width: 100px; */
+    }
+    .container-flex{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 20px;
+        background-color: #eae9e9;
+    }
+    .container-flex1{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 20px;
+        background-color: #eae9e9;
+        /* border: 1px solid black; */
+
+
+    } 
+
+    .box1{
+        /* display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center; */
+        overflow: hidden;
+        width: 900px;
+        height: 500px;
+        border-radius: 1%;
+        border: 1px solid rgb(12, 12, 12);
+        background-color: #313131;
+
+    }
+      
+    .box2{
+        width: 900px;
+        height: 800px;
+        border-radius: 1%;
+        border: 1px solid rgb(186, 182, 182);
+        
+    }
+
+    .box3{
+        width: 500px;
+        height: 200px;
+        border-radius: 1%;
+        border: 1px solid rgb(186, 182, 182);
+    }
+    .box4{
+        width: 500px;
+        height: 200px;
+        border-radius: 1%;
+        /* display: flex; */
+        border: 1px solid rgb(186, 182, 182);
+    }
+    .box5{
+        width: 500px;
+        height: 200px;
+        border-radius: 1%;
+        border: 1px solid rgb(186, 182, 182);
+    }
+
+    .boxA{
+        width: 80%;
+        height: 40px;
+        margin-left: 45px;
+        margin-top: 70px;
+        border: 3px solid rgb(84, 78, 78);
+    }
+
+    .boxA h3{
+        margin-top: 8px;
+        text-align: center;
+    }
+
+
+
+    .ul {
+        margin-top: 10px;
+        margin-left: 15px;
+        list-style-type: none;
+        
+        
+    }
+
+    .ul li{
+        float: left;
+        text-align: center;
+        margin: 35px;
+        font-size: 17px;
+    }
+
+    .ul2 {
+        margin-top: 150px;
+        margin-left: 15px;
+        list-style-type: none;
+        
+        
+    }
+
+    .ul2 li{
+
+        /* text-align: left; */
+
+        margin: 10px;
+        font-size: 15px ;
+    
+        
+    }
+
+    .Ru{
+        margin-top: 20px;
+        margin-left: 20px;
+
+    }
+    .bishare{
+        font-size: 20px;
+        margin-left: 200px;
+    }
+
+    .biheart{
+        background: transparent;
+        outline: none;
+        border: none;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .biheart i:hover{
+        cursor: pointer;
+    }
+
+
+    .name{
+        margin-top: 8px;
+        margin-left: 30px;
+        color: gray;
+    }
+
+
+    .loc{
+        margin-top: 60px;
+        margin-left: 30px;
+        color: gray;
+    }
+
+
+    .li1{
+        margin-top: 80px;
+        
+    }
+
+    .image6{
+        width: 80px;
+        height: 80px;
+        margin-top: 20px;
+        margin-left: 20px;
+        border-radius: 50%;
+    }
+
+    .box4A{
+        width: 450px;
+        height: 30px;
+        font-size: 19px; 
+        display: flex;
+       
+    }
+
+    .box4A h3{
+         margin-top: 48px;
+         margin-left: 10px;
+        
+    }
+    .box4A i{
+        margin-left: 80px;
+    }
+    .box4 .bi{
+        /* margin-top: 90px; */.
+        
+    }
+    ._3AfFq{
+        color: blue;
+        text-decoration-line: underline; 
+    }
+    .bicall{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .box5A {
+        width: 450px;
+        height: 200px;
+        
+    }
+
+    .Rupis{
+        text-size-adjust: 10px;
+    }
+
+
+    .container2{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .swiper{
+        width: 70%;
+        /* height: 100%; */
+        height: fit-content;
+    }
+
+    .swiper-slide img{
+        width: 100%;
+        height: 80%;
+    }
