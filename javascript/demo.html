@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <script src="app.js" defer ></script> -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="outer" >
+    <div class="formdata">
+      <input type="text" id="name" placeholder="username">
+      <input type="text" id="price" placeholder="price">
+      <input type="file" id="pic" placeholder="upload picture">
+    <br>
+    <br>
+    <input type="text" id="item name" placeholder="item name">
+    <br>
+    <br>
+    <input type="text" id="modelYear" placeholder="year of purchase">
+    <br>
+    <br>
+    <input type="number" id="phoneNum" placeholder="user mobile num">
+    <br>
+    <br>
+    <select name="" id="category">
+      <option value="">choose the item category</option>
+      <option value="bike">Bike</option>
+      <option value="car">Car</option>
+      <option value="phone">Phone</option>
+      <option value="electronics">Electronics</option>
+      <option value="sports">Sports</option>
+      <option value="other">others</option>
+    </select>
+    <br>
+    <br>
+    <textarea name="" id="txt" cols="30" rows="10" placeholder="description"></textarea>
+    <br>
+    <br>
+    <button id="sub" >Submit data</button>
+    
+    </div>
+    <div class="new" id="outer"></div>
+  
+</div>
+<!-- --------------------------------js----------------------------- -->
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAvmL-g0PRjxKgdkdcI2ZPSLFLixcjWL9o",
+    authDomain: "shopp-275bd.firebaseapp.com",
+    databaseURL: "https://shopp-275bd-default-rtdb.firebaseio.com",
+    projectId: "shopp-275bd",
+    storageBucket: "shopp-275bd.appspot.com",
+    messagingSenderId: "768750467172",
+    appId: "1:768750467172:web:8714137743d227ab058771",
+    measurementId: "G-25J6TVD26F"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  import{getDatabase, ref, get, set, child, update, onValue, remove}
+  from "https://www.gstatic.com/firebasejs/9.19.0/firebase-database.js"
+  const db = getDatabase();
+  //----------------------------------------------------------------------
+  var namebox=document.getElementById("name");
+  var priceIt=document.getElementById("price");
+  var picture=document.getElementById("pic");
+  
+
+var itemName=document.getElementById("item name");
+var modelYear=document.getElementById("modelYear");
+var phoneNum=document.getElementById("phoneNum");
+var category=document.getElementById("category");
+var description=document.getElementById("txt");
+var submit=document.getElementById("sub");
+
+
+var show=document.getElementById("create");
+// -----------------------------------------------------------
+function InsertData(){
+  set(ref(db, "userdata/" + phoneNum.value),{
+      nameUser: namebox.value,
+      itemPic:picture.value,
+      priceItem:priceIt.value,
+      nameItem: itemName.value,
+      yearModel: modelYear.value,
+      mobileUser: phoneNum.value,
+      categoryItem: category.value,
+      desItem: description.value,
+  })
+  .then(()=>{
+    // console.log(itemPic);
+    
+    
+      alert("data stored successfully")
+      .catch((error)=>{
+          alert("unsuccessful ...!!"+error)
+      })
+  })
+}
+
+//----------------------------creating card----------------------------
+let box =document.getElementById('outer');
+        function card(priceItem,yearModel,categoryItem){
+            let maincard=document.createElement('div');
+            let subcard=document.createElement('div');
+            subcard.classList.add('subcard')
+            maincard.classList.add('maincard')
+            box.appendChild(maincard);
+            maincard.appendChild(subcard);
+            let p1=document.createElement('p');
+            let p2=document.createElement('p');
+            let p3=document.createElement('p');
+            //---------------------------------
+            
+//--------------------------------------------------------------
+            
+            p1.innerText=`price :${priceItem}`;
+            p2.innerText=`Year of purcase :${yearModel}`;
+            p3.innerText=` Type : ${categoryItem}`;
+            maincard.appendChild(p1);
+            maincard.appendChild(p2);
+            maincard.appendChild(p3);
+            
+            
+        }
+         //-----------------set all object atrributes-----------------
+         function allItem(userdata){
+            // maincard.innerHTML="";
+            userdata.forEach(e=>{
+                card(e.priceItem, e.yearModel,e.categoryItem);
+            });
+        }
+         //-------------------get realtime response------------------------
+
+         function getdatarealtime(){
+            const dbRef=ref(db,"userdata");
+            onValue(dbRef,(snapshot)=>{
+                var students=[];
+                snapshot.forEach(childSnapshot=>{
+                    students.push(childSnapshot.val());
+                });
+                allItem(students);
+            })
+        }
+        window.onload=getdatarealtime;
+        //============================================================
+
+
+          
+
+//============================================================
+// window.addEventListener('load',InsertData);
+    submit.addEventListener('click',InsertData);
+    // show.addEventListener('click',SelectData);
+
+    //=============================================================
+    
+
+  </script>
+  
+</body>
+</html>
