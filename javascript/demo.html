@@ -113,24 +113,30 @@ function InsertData(){
 
 //----------------------------creating card----------------------------
 let box =document.getElementById('outer');
-        function card(priceItem,yearModel,categoryItem){
+        
+        function card(priceItem,nameItem,yearModel,categoryItem){
             let maincard=document.createElement('div');
             let subcard=document.createElement('div');
             subcard.classList.add('subcard')
             maincard.classList.add('maincard')
             box.appendChild(maincard);
             maincard.appendChild(subcard);
+            
+            
             let p1=document.createElement('p');
+            let v1=document.createElement('p');
             let p2=document.createElement('p');
             let p3=document.createElement('p');
             //---------------------------------
             
-//--------------------------------------------------------------
+//------------------------------------- - - - - - - - - - - - - - - - - - - - - - - - -
             
             p1.innerText=`price :${priceItem}`;
+            v1.innerText=`Item name :${nameItem}`;
             p2.innerText=`Year of purcase :${yearModel}`;
             p3.innerText=` Type : ${categoryItem}`;
             maincard.appendChild(p1);
+            maincard.appendChild(v1);
             maincard.appendChild(p2);
             maincard.appendChild(p3);
             
@@ -140,7 +146,7 @@ let box =document.getElementById('outer');
          function allItem(userdata){
             // maincard.innerHTML="";
             userdata.forEach(e=>{
-                card(e.priceItem, e.yearModel,e.categoryItem);
+                card(e.priceItem,e.nameItem,e.yearModel,e.categoryItem);
             });
         }
          //-------------------get realtime response------------------------
