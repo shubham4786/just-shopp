@@ -10,3 +10,8 @@ var typedd=new Typed(".auto-typee",{
     backSpeed:120,
     loop:true
 })
+function start(){
+    
+        window.open('http://127.0.0.1:5501/olx-clone/index.html', '_self');
+    
+}

@@ -103,6 +103,7 @@ select {
     justify-content: center;
     flex-wrap: wrap;
     margin: 12px;
+    background-color: #e9eded;
 }
 #banner{
     height: 19vh;
