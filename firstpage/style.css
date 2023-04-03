@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    height: 100vh;
+    width:100%;
+    color:rgb(255, 255, 255);
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.683),rgba(0, 0, 0, 0.742)),url("./img-digitalretail.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+    position: relative;
+}
+.container h1{
+    font-size: 80px;
+    font-weight: 600;
+    /* text-align: center; */
+}
+span{
+    color:rgb(255, 208, 0);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 5px rgb(39, 37, 37);
+}
+button{
+    margin-top: -200px;
+    color:rgb(255, 255, 255);
+    background-color: FF000D !important;
+    border:none;
+    border-radius: 40px;
+    height: 60px;
+    width: 370px;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 2px 2px 9px rgb(31, 32, 33);
+    font-family:cursive;
+    font-weight: 600;
+    
+    
+}
+button:hover{
+    background-color: rgb(197, 8, 8) !important;
+    transition: 0.5s;
+    box-shadow: 1px 1px 10px rgb(10, 120, 255);
+    scale: 1.2;
+    
+    
+ }
+ p{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+ }
+ #cart{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    right: -300px;
+    animation-name: moving;
+    animation-duration: 8s;
+    /* animation-iteration-count: infinite; */
+ }
+ @keyframes moving{
+    from{bottom: 0;
+        left: 35vw;}
+    to{bottom: 0;
+        left:100vw;
+        }
+
+ }
+ #car{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    bottom: 28vh;
+    right: 10vw;
+    animation-name: moving1;
+    animation-duration: 1.5s;
+    /* animation-iteration-count: infinite; */
+ }
+ @keyframes moving1{
+    from{bottom: 28vh;
+        right: 0;}
+    to{bottom: 28vh;
+        right:10vw;
+        }
+
+ }
+ #store{
+    height: 400px;
+    width: 450px;
+    position: absolute;
+    bottom: -1vh;
+    left: 0vw;
+    animation-name: moving2;
+    animation-duration: 2s;
+    /* animation-iteration-count: infinite; */
+ }
+ @keyframes moving2{
+    from{bottom: -1vh;
+        left: -10vw;}
+    to{bottom: -1vh;
+        left:0vw;
+        }
+    }
+    #next{
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+    #next span{
+        font-size: 40px;
+       font-family: cursive;
+        color: rgb(232, 246, 255);
+        /* text-shadow: 1px 1px 8px rgb(37, 35, 35); */
+    }
