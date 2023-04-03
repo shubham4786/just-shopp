@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "firebase-admin": "^11.5.0",
+    "json-server": "^0.17.3"
+  }
+}
