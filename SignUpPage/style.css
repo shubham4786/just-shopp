@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+body{
+/*    
+    background-image:url(https://th.bing.com/th/id/OIP.RgFeITER2zNVlZs4WRJrQwHaHa?pid=ImgDet&rs=1);
+    background-color: #f2f2f2;
+ */
+ /*
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+     */
+}
+.form {
+    margin: 50px auto;
+    max-width: 400px;
+    padding: 20px;
+  
+  }
+  
+  /* Style for the form elements */
+  .formdesign {
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the input field */
+  input[type="text"],
+  input[type="email"],
+  input[type="phone"],
+  input[type="password"],
+  select {
+    padding: 5px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #e3dede;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Style for the error message */
+  .formerror {
+    color: red;
+    font-size: 12px;
+  }
+  
+  /* Style for the submit button */
+  .but {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .but:hover {
+    background-color: #45a049;
+  }
+  
