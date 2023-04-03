@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  
+   
+    <form aciton="/myaction.php" class="form" name="myForm" onsubmit="return validateForm()" method="post">
+        <d  iv class="formdesign" id="name">
+            <label for="fname">Name</label>           
+           <input type="text" name="fname" required><b><span class="formerror"> </span></b> <!--getError-->
+           
+        </d>
+  
+
+        <div class="formdesign" id="email">
+            Email: <input type="email" name="femail" required><b><span class="formerror"> </span></b> <!--getError-->
+        </div>
+
+        <div class="formdesign" id="phone">
+            Phone: <input type="phone" name="fphone" required><b><span class="formerror"></span></b>  <!--getError-->
+        </div>
+       
+         <!-- create a password section -->
+        <div class="formdesign" id="pass">
+            Password: <input type="password" name="fpass" required><b><span class="formerror" ></span></b>  <!--getError-->
+        </div>
+             <!-- create a confirm  password section -->
+        <div class="formdesign" id="cpass">
+            Confirm Password: <input type="password" name="fcpass" required><b><span class="formerror"></span></b>  <!--getError-->
+        </div>
+         <div class="formdesign" >
+
+            <!-- create a location option  -->
+            <select value="Location">
+                <option value="lucknow">Lucknow</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Bangolre">Bangolre</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="chennai">Chennai</option>
+                <option value="Gorakhapur">Gorakhapur</option>
+            </select>
+           
+            
+        </div>
+         <div>   
+
+             here create a submit button 
+             <a href="./otp.html">
+                <input id="btn"  class="but" type="submit" value="Sign Up" >   
+             </a>         
+         </div>
+         
+        
+
+    </form>
+    <!-- <div>   
+        <a href="./otp.html">
+           <input id="btn"  class="but" type="submit" value="Sign Up" >   
+        </a>         
+    </div> -->
+</body>
+<script src="app.js"></script>
+
+</html>
