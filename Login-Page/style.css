@@ -115,3 +115,21 @@ input{
     
     margin:5px 5px;
   }
+  #cutt2{
+    height: 50px;
+    width: 50px;
+    color: rgb(86, 87, 88);
+    position: absolute;
+    top: 5px;
+    right: 15px;
+  }
+  #cutt2:hover{
+    transition: 0.8;
+    scale: 1.2;
+    cursor: pointer;
+  }
+  #cross2{
+   background: transparent;
+   border: none;
+    background-color: aqua;
+  }

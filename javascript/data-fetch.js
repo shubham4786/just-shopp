@@ -19,15 +19,19 @@ for (let i = 0; i < data.length; i++) {
 
     let prices = document.createElement("div");
     let price = document.createTextNode(`Price:- ${data[i].price}`);
-
+    
+    prices.classList.add("details");
+    years.classList.add("details");
+    items.classList.add("details");
     //append child
     years.appendChild(year);
     items.appendChild(item);
     prices.appendChild(price);
+    
 
     box.appendChild(img);
     box.appendChild(items);
-    box.appendChild(price);
+    box.appendChild(prices);
     box.appendChild(years);
     
 
