@@ -7,8 +7,8 @@
 /* navigation-bar */
 nav {
     position: fixed;
-    width: 100vw;
-    height: 11vh;
+    width: 100%;
+    height: 55px;
     background: #12292f;
     display: flex;
     align-items: center;
@@ -24,6 +24,13 @@ nav ul {
 
 nav ul li {
     display: inline;
+}
+.logo{
+    font-size: 28px;
+    font-weight: 500;
+    text-shadow: 3px 3px 4px #5ef3f1e6;
+    font-family: cursive;
+    color: white !important;
 }
 
 #search {
@@ -70,15 +77,15 @@ select {
     border: none;
     border-radius: 25px 25px;
 }
-#log:hover{
-    /* border: 1px solid rgb(65, 63, 63); */
-    box-shadow:0px 0px 8px #f42501;
+
+#log:hover {
+    box-shadow: 0px 0px 8px #f42501;
 }
-#log a{
+
+#log a {
     text-decoration: none;
     font-family: cursive;
     color: white;
-    
 }
 
 #sell {
@@ -92,9 +99,9 @@ select {
     border-color: #23e5db #f50a03 #ffce32 #3a77ff;
     border-radius: 20px;
 }
-#sell:hover{
-    box-shadow:0px 0px 5px rgb(8, 228, 8);
 
+#sell:hover {
+    box-shadow: 0px 0px 5px rgb(8, 228, 8);
 }
 
 /* data-fetch */
@@ -104,36 +111,36 @@ select {
     flex-wrap: wrap;
     margin: 12px;
 }
-#banner{
-    height: 19vh;
-    width: 99vw;
+
+#banner {
+    height: 100px;
+    width: 100%;
     margin-top: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
-.box {
+.box, .maincard{
     margin: 10px;
     border: 1px solid rgb(75, 74, 74);
     border-radius: 8px;
     font-weight: 700;
     overflow: hidden;
     height: 320px;
-    width: 300px;
+    width: 270px;
     background-color: rgb(238, 231, 229);
     border-bottom: 3px solid rgb(0, 128, 255);
-    
 }
 
 .box-img {
     width: 100%;
-    height: 60%;
+    height: 65%;
     border-radius: 5px;
     border-bottom: 2px solid rgb(35, 33, 33);
 }
-.details{
+
+.details {
     margin-bottom: 1px;
     padding: 0 10px;
-    
 }
 
 /* load-more */
@@ -157,7 +164,6 @@ select {
 }
 
 .download {
-    margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,9 +187,10 @@ select {
     font-size: 20px;
 }
 
-.download-section{
+.download-section {
     width: 100%;
     background-color: #f0efee;
+    margin-top: 20px;
 }
 
 .download_store p {
@@ -210,7 +217,7 @@ select {
 .footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     margin: auto;
 }
@@ -224,65 +231,59 @@ select {
 .footer_box p {
     margin: 8px 0 8px 0;
 }
+
 /* --------------------------------------- */
-.card{
+.card {
     height: 200px;
     width: 200px;
     background-color: yellow;
-  }
-  #outer{
+}
+
+#outer {
     min-height: 100vh;
-    /* width: 100vw; */
-    
     justify-content: center;
     align-items: center;
-    display:none;
-  }
-  .new{
+    display: none;
+}
+
+.new {
     display: flex;
     flex-wrap: wrap;
-  }
-  .maincard{
-    height: 320px !important;
-    width: 300px !important;
-    background-color: rgb(238, 231, 229);
-    margin: 5px 10px;
-    border: 1px solid rgb(110, 107, 107);
-    border-radius: 8px;
-    font-weight: 600;
-    
-    
 }
-.subcard{
-    height: 60%;
+
+.subcard {
+    height: 65%;
     width: 100%;
     background-color: rgba(6, 210, 242, 0.82);
     border-radius: 8px;
-  
-  }
-  .maincard p{
+}
+
+.maincard p {
     padding: 0px 10px;
     margin-bottom: 1px !important;
-  }
-  .formdata{
-   margin: auto;
-    /* margin-left: 100px; */
+}
+
+.formdata {
+    margin: auto;
     background-color: rgb(255, 255, 255);
-    width:40vw;
+    width: 40vw;
     border: 1px solid rgb(111, 108, 108);
     display: flex;
-    /* display: none; */
     z-index: 15;
-    /* position: fixed; */
     border-radius: 10px;
-
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    
-  
-  }
-  #name,#price,.productt,#modelYear,#phoneNum ,#category{
+
+
+}
+
+#name,
+#price,
+.productt,
+#modelYear,
+#phoneNum,
+#category {
     font-weight: 400;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 70%;
@@ -291,40 +292,44 @@ select {
     margin-left: 10px;
     border: 1px solid rgb(136, 133, 133);
     font-size: 18px;
-    
-  }
-  #name:hover,#price:hover,.productt:hover,#modelYear:hover,#phoneNum:hover,#category:hover{
+}
+
+#name:hover,
+#price:hover,
+.productt:hover,
+#modelYear:hover,
+#phoneNum:hover,
+#category:hover {
     box-shadow: 0 0 5px rgb(0, 166, 255);
-  }
-  #txt{
+}
+
+#txt {
     margin-left: 10px;
     width: 70%;
     height: 20vh;
     font-size: 18px;
-  
-  }
-  #sub{
+}
+
+#sub {
     width: 50%;
     height: 8vh;
     border-radius: 50px;
     margin: 30px 0;
     background-color: rgb(0, 170, 255);
-    /* box-shadow: 2px 2px 5px rgb(49, 46, 46); */
-    box-shadow: 2px 2px 8px rgb(26, 30, 33) ;
+    box-shadow: 2px 2px 8px rgb(26, 30, 33);
     border: none;
     color: white;
     font-size: 20px;
     font-family: sans-serif;
-  }
-  #sub:hover{
-    
+}
+
+#sub:hover {
     background-color: rgb(7, 145, 214);
     transition: 0.2s;
-    /* scale: 1.05; */
-    box-shadow: 2px 2px 8px rgb(26, 30, 33) ;
+    box-shadow: 2px 2px 8px rgb(26, 30, 33);
 }
-.outerform{
-    /* display: flex; */
+
+.outerform {
     width: 100vw;
     height: 102vh;
     top: 0;
@@ -333,29 +338,35 @@ select {
     background-color: rgba(0, 0, 0, 0.922);
     display: none;
     position: fixed;
-  }
-  #cross{
+}
+
+#cross {
     position: absolute;
     right: 45px;
     top: 14px;
     background: transparent;
     border: none;
-  }
-  #name, #namespan{
+}
+
+#name,
+#namespan {
     margin-top: 5vh;
-  }
-  #cutt{
+}
+
+#cutt {
     height: 50px;
     width: 50px;
     color: grey;
-  }
-  #cutt:hover{
+}
+
+#cutt:hover {
     transition: 0.5s;
     scale: 1.1;
     cursor: pointer;
-  }
-  span{
+}
+
+span {
     color: red;
     margin-left: -10px;
     margin-top: 5px;
-  }
+}
