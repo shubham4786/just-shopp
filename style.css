@@ -110,6 +110,7 @@ select {
     justify-content: center;
     flex-wrap: wrap;
     margin: 12px;
+    background-color: #e9eded;
 }
 
 #banner {
@@ -369,4 +370,28 @@ span {
     color: red;
     margin-left: -10px;
     margin-top: 5px;
+}
+
+
+/* --------------------------------------------------------- */
+#viewProduct{
+    display: flex;
+    justify-content: center;
+}
+.viewProdImg{
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+}
+
+.viewProdDetails{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border: 2px solid gray;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
 }
